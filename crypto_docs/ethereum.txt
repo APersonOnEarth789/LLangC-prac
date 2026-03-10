@@ -1,0 +1,15 @@
+Ethereum is a decentralized blockchain platform that enables developers to build and deploy smart contracts and decentralized applications (dApps).
+
+Unlike Bitcoin, which primarily focuses on digital currency, Ethereum was designed as a programmable blockchain. Developers can write programs that automatically execute when predefined conditions are met.
+
+Smart contracts are self-executing pieces of code stored on the Ethereum blockchain. They enable trustless transactions between parties without requiring intermediaries.
+
+Ethereum introduced the concept of a virtual machine called the Ethereum Virtual Machine (EVM). The EVM allows smart contracts to run on the blockchain in a secure and deterministic way.
+
+Ether (ETH) is the native cryptocurrency of the Ethereum network. It is used to pay transaction fees known as gas.
+
+Gas fees compensate network validators for processing and validating transactions. Complex smart contract operations require more gas.
+
+Ethereum transitioned from Proof of Work to Proof of Stake in an upgrade known as "The Merge". In Proof of Stake, validators stake ETH to help secure the network.
+
+Ethereum is the foundation for many decentralized finance (DeFi) protocols, NFT marketplaces, and blockchain-based applications.

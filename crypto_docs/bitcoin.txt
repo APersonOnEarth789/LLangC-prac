@@ -1,0 +1,15 @@
+Bitcoin is a decentralized digital currency introduced in 2008 by the pseudonymous creator Satoshi Nakamoto. It operates without a central authority such as a government or bank and instead relies on a peer-to-peer network.
+
+Bitcoin transactions are recorded on a public ledger called the blockchain. The blockchain is maintained by a distributed network of nodes that verify and store transaction data. Each block contains a list of transactions and is cryptographically linked to the previous block.
+
+The Bitcoin network uses a consensus mechanism called Proof of Work (PoW). Miners compete to solve cryptographic puzzles, and the first miner to solve the puzzle earns the right to add the next block to the blockchain and receives a block reward.
+
+Bitcoin has a fixed maximum supply of 21 million coins. This scarcity is enforced by the protocol and is one of the reasons Bitcoin is often compared to digital gold.
+
+The Bitcoin halving event occurs approximately every four years and reduces the mining reward by half. This mechanism gradually reduces the rate of new Bitcoin entering circulation.
+
+Bitcoin can be used for peer-to-peer payments without requiring financial intermediaries. Transactions are verified by the network and recorded permanently on the blockchain.
+
+Bitcoin wallets store cryptographic keys that allow users to send and receive Bitcoin. Wallets can be software-based, hardware devices, or even paper backups.
+
+Because Bitcoin is decentralized, it is resistant to censorship and single points of failure. However, the network still faces challenges such as scalability and energy consumption.
