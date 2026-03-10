@@ -1,0 +1,15 @@
+Decentralized Finance (DeFi) refers to a collection of financial applications built on blockchain networks that aim to recreate traditional financial services without centralized intermediaries.
+
+DeFi applications are typically built using smart contracts, which automate financial processes such as lending, borrowing, trading, and yield generation.
+
+One of the most common DeFi services is decentralized exchanges (DEXs). These platforms allow users to trade cryptocurrencies directly with each other using automated market makers instead of centralized order books.
+
+Lending and borrowing protocols allow users to deposit crypto assets as collateral and borrow other assets. Interest rates are usually determined algorithmically based on supply and demand.
+
+Yield farming is a strategy where users move assets between DeFi protocols to maximize returns from interest, rewards, or liquidity incentives.
+
+Liquidity pools are collections of funds locked in smart contracts that facilitate trading on decentralized exchanges. Liquidity providers earn fees from trades that occur within the pool.
+
+Stablecoins are frequently used within DeFi to reduce volatility. These tokens are designed to maintain a stable value relative to a fiat currency such as the US dollar.
+
+DeFi introduces benefits such as transparency, global accessibility, and programmability. However, it also carries risks including smart contract vulnerabilities and market volatility.
