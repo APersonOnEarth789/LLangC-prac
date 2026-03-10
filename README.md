@@ -14,13 +14,16 @@ and generates answers using a local LLM via Ollama.
 
 ## Setup
 #### Install Ollama
-brew install ollama
+```brew install ollama```
+
+#### In another terminal window run
+```ollama serve```
 
 #### Pull the model
-ollama pull llama3
+```ollama pull llama3```
 
 #### Install dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 #### Run the model
 python agent.py
