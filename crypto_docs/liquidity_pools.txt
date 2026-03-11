@@ -1,0 +1,9 @@
+Liquidity Pools
+
+Liquidity pools are collections of cryptocurrency locked in smart contracts used to facilitate decentralized trading.
+
+Instead of traditional buyers and sellers, decentralized exchanges use liquidity pools and automated market makers (AMMs).
+
+Users who provide funds to a pool are called liquidity providers. They earn a portion of trading fees.
+
+Popular DeFi platforms using liquidity pools include Uniswap and Curve.

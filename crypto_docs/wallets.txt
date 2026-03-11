@@ -1,0 +1,11 @@
+Crypto Wallets
+
+A cryptocurrency wallet is a tool used to store and manage private keys.
+
+Wallets allow users to send, receive, and manage cryptocurrency.
+
+There are two main types:
+- hot wallets: connected to the internet
+- cold wallets: offline storage devices
+
+Hardware wallets such as Ledger and Trezor are examples of cold wallets.

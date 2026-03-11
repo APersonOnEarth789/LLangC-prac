@@ -1,0 +1,11 @@
+Bitcoin Mining
+
+Mining is the process used in proof-of-work blockchains like Bitcoin to validate transactions and add new blocks.
+
+Miners compete to solve a cryptographic puzzle. The first miner to find a valid solution can add a block to the blockchain and receives a reward.
+
+The reward typically includes:
+- newly created bitcoins (block reward)
+- transaction fees from the included transactions
+
+Mining requires significant computational power and energy.

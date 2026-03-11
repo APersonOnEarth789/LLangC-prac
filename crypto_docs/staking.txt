@@ -1,0 +1,9 @@
+Staking
+
+Staking is the process of locking cryptocurrency in a proof-of-stake blockchain to help secure the network.
+
+Validators are selected to confirm transactions and create new blocks. In return, they receive rewards.
+
+Ethereum transitioned from proof-of-work to proof-of-stake in 2022, allowing users to stake ETH to earn rewards.
+
+Staking typically requires holding a minimum amount of tokens or participating through staking pools.

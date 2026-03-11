@@ -1,3 +1,4 @@
+import os
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -17,9 +18,7 @@ def build_retriever():
     for filename in os.listdir(folder):
         if filename.endswith(".txt"):
             path = os.path.join(folder, filename)
-
-            with open(path, "r", encoding="utf-8") as f:
-                text = f.read()
+            text = load_text_file(path)
 
             docs.append(
                 Document(

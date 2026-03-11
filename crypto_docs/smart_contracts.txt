@@ -1,0 +1,13 @@
+Smart Contracts
+
+Smart contracts are self-executing programs stored on a blockchain.
+
+They automatically execute actions when predefined conditions are met. This removes the need for intermediaries.
+
+Ethereum popularized smart contracts by allowing developers to write programs that run directly on the blockchain.
+
+Common uses include:
+- decentralized finance (DeFi)
+- NFT marketplaces
+- token issuance
+- automated payments

@@ -1,0 +1,10 @@
+Stablecoins
+
+Stablecoins are cryptocurrencies designed to maintain a stable value, typically pegged to a fiat currency like the US dollar.
+
+They are widely used in crypto trading and decentralized finance because they reduce price volatility.
+
+Types of stablecoins include:
+- fiat-backed (e.g. USDC, USDT)
+- crypto-collateralized
+- algorithmic stablecoins

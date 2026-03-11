@@ -1,0 +1,16 @@
+Blockchain
+
+A blockchain is a distributed digital ledger that records transactions across many computers. 
+Instead of a central authority maintaining records, each participant in the network holds a copy of the ledger.
+
+Transactions are grouped into blocks. Each block is cryptographically linked to the previous block, forming a chain.
+
+This design makes blockchains resistant to tampering, because altering a block would require modifying every subsequent block across the entire network.
+
+Key properties of blockchains include:
+- decentralization
+- transparency
+- immutability
+- cryptographic security
+
+Bitcoin was the first successful blockchain implementation.
