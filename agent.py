@@ -1,23 +1,26 @@
+import os
 from langchain.agents import create_agent
 from langchain.tools import tool
-from langchain_ollama import ChatOllama
+from langchain_openai import ChatOpenAI
+from langchain_openai import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from dotenv import load_dotenv
 
+load_dotenv()
+if not os.getenv("OPENAI_API_KEY"):
+    raise ValueError("OPENAI_API_KEY not found in environment")
 
-# -----------------------------
-# 1. Load your knowledge base
-# -----------------------------
+# Load Knowledge Base from files
 def load_text_file(path: str) -> str:
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
 
-bitcoin_text = load_text_file("bitcoin.txt")
-ethereum_text = load_text_file("ethereum.txt")
-defi_text = load_text_file("defi.txt")
+bitcoin_text = load_text_file("crypto_docs/bitcoin.txt")
+ethereum_text = load_text_file("crypto_docs/ethereum.txt")
+defi_text = load_text_file("crypto_docs/defi.txt")
 
 docs = [
     Document(page_content=bitcoin_text, metadata={"source": "bitcoin.txt"}),
@@ -31,17 +34,15 @@ splitter = RecursiveCharacterTextSplitter(
 )
 split_docs = splitter.split_documents(docs)
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+embeddings = OpenAIEmbeddings(
+    model="text-embedding-3-small"
 )
 
 vectorstore = FAISS.from_documents(split_docs, embeddings)
 retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
 
-# -----------------------------
-# 2. Define tools
-# -----------------------------
+# Tools
 @tool
 def search_knowledge_base(question: str) -> str:
     """Search the crypto knowledge base for relevant information."""
@@ -65,18 +66,12 @@ def list_topics(_: str = "") -> str:
     return "Available topics: Bitcoin, Ethereum, DeFi"
 
 
-# -----------------------------
-# 3. Create model
-# -----------------------------
-llm = ChatOllama(
-    model="qwen3.5",
-    temperature=0,
+# Create Model and Agent
+llm = ChatOpenAI(
+    model="gpt-4o-mini",
+    temperature=0
 )
 
-
-# -----------------------------
-# 4. Create agent
-# -----------------------------
 system_prompt = """
 You are a crypto research assistant.
 
@@ -96,14 +91,12 @@ agent = create_agent(
 )
 
 
-# -----------------------------
-# 5. Run interactive loop
-# -----------------------------
+# Interactive loop
 if __name__ == "__main__":
     print("Crypto Agent ready. Type 'quit' to exit.\n")
 
     while True:
-        user_input = input("You: ").strip()
+        user_input = input("Ask me a question: ").strip()
         if user_input.lower() in {"quit", "exit"}:
             break
 
