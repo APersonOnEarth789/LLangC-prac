@@ -1,26 +1,28 @@
 # Crypto AI Agent
-A simple LLM agent built with LangChain and a local Qwen 3.5 model that answers cryptocurrency questions using retrieval-augmented generation (RAG).
+A simple LLM agent built with LangChain and OpenAI's gpt-4o-mini model that answers cryptocurrency questions using retrieval-augmented generation (RAG).
 
 The agent retrieves information from a small knowledge base containing documents about:
 - Bitcoin
 - Ethereum
 - DeFi
-
-and generates answers using a local LLM via Ollama.
+and generates answers using an OpenAI API call.
 
 ## Requirements
 - Python 3.10+
-- Ollama
 
 ## Setup
-#### Install Ollama
-brew install ollama
-
-#### Pull the model
-ollama pull llama3
-
 #### Install dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
-#### Run the model
-python agent.py
+#### Set up OpenAI API key
+In a `.env` file in project root
+```OPENAI_API_KEY=your_api_key_here```
+
+You can create an API key here:
+https://platform.openai.com/api-keys
+
+#### Run the agent
+```python agent.py```
+
+#### Example Usage
+Ask me a question: What is Bitcoin?
